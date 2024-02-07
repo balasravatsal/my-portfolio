@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
 import "./Header.scss";
+import { SiLeetcode } from "react-icons/si";
+import { SiCodingninjas } from "react-icons/si";
 
 const resumeLink = import.meta.env.VITE_REACT_APP_RESUME_LINK
 
@@ -31,12 +33,21 @@ const Header = () => (
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
             <h1 className="head-text">Vatsal</h1>
+            <p className="p-text">Full Stack Developer</p>
           </div>
         </div>
 
         <div className="tag-cmp app__flex">
-          <p className="p-text">Web Developer</p>
-          {/* <p className="p-text">Freelancer</p> */}
+          <a href="https://www.codingninjas.com/studio/profile/balasravatsal" style={{ textDecoration: "None" }}>
+            <p className="p-text" style={{ fontWeight: 900 }}>
+            <SiCodingninjas /> Coding Ninjas (240+)
+            </p>
+          </a>
+          <a href="https://leetcode.com/secondwarbringer/" style={{ textDecoration: "None" }}>
+            <p className="p-text" style={{ fontWeight: 900 }}>
+            <SiLeetcode />  LeetCode
+            </p>
+          </a>
         </div>
         
         <a
