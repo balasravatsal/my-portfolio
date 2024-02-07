@@ -14,7 +14,7 @@ const App = () => {
       <Work/>
       <Skills/>
       <Footer/>
-      <h4 className='moto'>My Moto ~ Maybe Not Immediately But Definitely!</h4>
+      <h4 className='moto'>Maybe Not Immediately But Definitely!</h4>
     </div>
     </>
   )
