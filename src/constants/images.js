@@ -45,7 +45,7 @@ import codechef from '../assets/codechef.svg';
 export default {
   email,
   mobile,
-  api,
+  // api,
   cpp,
   css,
   figma,
