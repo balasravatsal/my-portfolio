@@ -1,6 +1,6 @@
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
-import api from '../assets/api.png';
+//import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
 import figma from '../assets/figma.png';
@@ -45,7 +45,7 @@ import codechef from '../assets/codechef.png';
 export default {
   email,
   mobile,
-  api,
+  //api,
   cpp,
   css,
   figma,
