@@ -6,6 +6,7 @@ import { images } from "../../constants";
 import "./Header.scss";
 import { SiLeetcode } from "react-icons/si";
 import { SiCodingninjas } from "react-icons/si";
+import { SiCodechef } from "react-icons/si";
 
 const resumeLink = import.meta.env.VITE_REACT_APP_RESUME_LINK
 
@@ -38,14 +39,19 @@ const Header = () => (
         </div>
 
         <div className="tag-cmp app__flex">
-          <a href="https://www.codingninjas.com/studio/profile/balasravatsal" style={{ textDecoration: "None" }}>
-            <p className="p-text" style={{ fontWeight: 900 }}>
-            <SiCodingninjas /> Coding Ninjas (240+)
-            </p>
-          </a>
           <a href="https://leetcode.com/secondwarbringer/" style={{ textDecoration: "None" }}>
             <p className="p-text" style={{ fontWeight: 900 }}>
-            <SiLeetcode />  LeetCode
+            <SiLeetcode />  LeetCode  (250+)
+            </p>
+          </a>
+          <a href="https://www.naukri.com/code360/profile/balasravatsal" style={{ textDecoration: "None" }}>
+            <p className="p-text" style={{ fontWeight: 900 }}>
+            <SiCodingninjas /> Coding Ninjas (400+)
+            </p>
+          </a>
+          <a href="https://www.codechef.com/users/balasravatsal" style={{ textDecoration: "None" }}>
+            <p className="p-text" style={{ fontWeight: 900 }}>
+            <SiCodechef /> CodeChef
             </p>
           </a>
         </div>
