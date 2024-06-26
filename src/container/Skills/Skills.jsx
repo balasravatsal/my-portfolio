@@ -16,7 +16,7 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
-      setExperiences(data);
+      setExperiences(data.reverse());
       console.log("Data", data);
     });
 
