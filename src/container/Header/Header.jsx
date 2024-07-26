@@ -49,11 +49,11 @@ const Header = () => (
             <SiCodingninjas /> Coding Ninjas (400+)
             </p>
           </a>
-          <a href="https://www.codechef.com/users/balasravatsal" style={{ textDecoration: "None" }}>
+          {/* <a href="https://www.codechef.com/users/balasravatsal" style={{ textDecoration: "None" }}>
             <p className="p-text" style={{ fontWeight: 900 }}>
             <SiCodechef /> CodeChef
             </p>
-          </a>
+          </a> */}
         </div>
         
         <a
