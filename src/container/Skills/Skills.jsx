@@ -12,12 +12,11 @@ const Skills = () => {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
+    const query = '*[_type == "experiences"] | order(year desc)';
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
-      setExperiences(data.reverse());
-      console.log("Data", data);
+      setExperiences(data);
     });
 
     client.fetch(skillsQuery).then((data) => {

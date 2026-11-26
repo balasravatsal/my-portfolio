@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
-import { images } from '../../constants';
+import { images, BLOG_URL } from '../../constants';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -20,6 +20,10 @@ const Navbar = () => {
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}
+        <li className="app__flex p-text" key="link-blogs">
+          <div />
+          <a href={BLOG_URL} target="_blank" rel="noreferrer">blogs</a>
+        </li>
       </ul>
 
       <div className="app__navbar-menu">
@@ -39,6 +43,11 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              <li key="blogs">
+                <a href={BLOG_URL} target="_blank" rel="noreferrer" onClick={() => setToggle(false)}>
+                  blogs
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}

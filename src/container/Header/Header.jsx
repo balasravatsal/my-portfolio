@@ -2,13 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { AppWrap } from "../../wrapper";
-import { images } from "../../constants";
+import { images, BLOG_URL, RESUME_URL } from "../../constants";
 import "./Header.scss";
 import { SiLeetcode } from "react-icons/si";
 import { SiCodingninjas } from "react-icons/si";
 import { SiCodechef } from "react-icons/si";
+import { FaPenNib } from "react-icons/fa";
 
-const resumeLink = import.meta.env.VITE_REACT_APP_RESUME_LINK
 
 const scaleVariants = {
   whileInView: {
@@ -34,14 +34,14 @@ const Header = () => (
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
             <h1 className="head-text">Vatsal</h1>
-            <p className="p-text">Full Stack Developer</p>
+            <p className="p-text">Software Engineer @ Anblicks</p>
           </div>
         </div>
 
         <div className="tag-cmp app__flex">
           <a href="https://leetcode.com/secondwarbringer/" style={{ textDecoration: "None" }}>
             <p className="p-text" style={{ fontWeight: 900 }}>
-            <SiLeetcode />  LeetCode  (250+)
+            <SiLeetcode />  LeetCode  (600+ · 1700+ rating)
             </p>
           </a>
           <a href="https://www.naukri.com/code360/profile/balasravatsal" style={{ textDecoration: "None" }}>
@@ -57,8 +57,20 @@ const Header = () => (
         </div>
         
         <a
-          href = {resumeLink}
-          download="Vatsal_Resume.pdf"
+          href={BLOG_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="tag-cmp app__flex"
+          style={{ textDecoration: "None" }}
+        >
+          <p className="p-text" style={{ fontWeight: 900 }}>
+            <FaPenNib /> Read My Blogs
+          </p>
+        </a>
+
+        <a
+          href={RESUME_URL}
+          download="Vatsal_Balasra_Resume.pdf"
           className="tag-cmp app__flex"
           style={{ textDecoration: "None" }}
         >

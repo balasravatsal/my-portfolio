@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-import { images } from "../../constants";
+import { FaPenNib } from "react-icons/fa";
+
+import { images, BLOG_URL, LINKEDIN_URL, RESUME_URL } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
 import "./Footer.scss";
 
-const resumeLink = import.meta.env.VITE_REACT_APP_RESUME_LINK
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -64,7 +65,9 @@ const Footer = () => {
           <div className="p-text">Phone Number</div>
         </a>
         <a
-          href="https://www.linkedin.com/in/balasra-vatsal/"
+          href={LINKEDIN_URL}
+          target="_blank"
+          rel="noreferrer"
           className="app__footer-card no-decor"
           style={{ marginLeft: "1rem", marginRight: "1rem" }}
         >
@@ -72,7 +75,19 @@ const Footer = () => {
           <div className="p-text">LinkedIn</div>
         </a>
         <a
-          href = {resumeLink}
+          href={BLOG_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="app__footer-card no-decor"
+          style={{ marginLeft: "1rem", marginRight: "1rem" }}
+        >
+          <FaPenNib className="app__footer-card-icon" />
+          <div className="p-text">My Blogs</div>
+        </a>
+        <a
+          href={RESUME_URL}
+          target="_blank"
+          rel="noreferrer"
           className="app__footer-card no-decor"
           style={{ marginLeft: "1rem", marginRight: "1rem" }}
         >
